@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import Provider from "./Provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +19,7 @@ export default function RootLayout({
 
     <html lang="en">
       <body>
-        {/* <Provider></Provider> */}  
+        <Provider></Provider>  
         {children}</body>
     </html>
     </ClerkProvider>
