@@ -1,13 +1,13 @@
 "use client";
 import GoogleAddressSearch from "@/app/_components/GoogleAddressSearch";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/utils/supabase/client";
+import { supabase } from "../../../utils/supabase/client";
 import { useUser } from "@clerk/nextjs";
 import { Loader } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { toast } from "sonner";
-
+ 
 function AddNewListing() {
   const [selectedAddress, setSelectedAddress] = useState();
   const [coordinates, setCoordinates] = useState();
@@ -52,6 +52,9 @@ function AddNewListing() {
         w-full
         shadow-md flex flex-col gap-5"
         >
+          <div>
+           
+          </div>
           <h2 className="text-gray-500 text-lg">
             Enter Address which you want to list
           </h2>
