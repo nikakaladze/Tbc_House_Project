@@ -13,7 +13,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "../../components/ui/drop-down";
+} from "../../components/ui/dropdown-menu";
 
 function Header() {
   const path = usePathname();
